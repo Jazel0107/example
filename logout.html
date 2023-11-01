@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sample Page</title>
+</head>
+<body>
+  <!-- I-click ang link o button para sa logout -->
+  <a href="#" id="logoutLink">Logout</a>
+  
+  <script>
+    // I-select ang logout link gamit ang ID
+    const logoutLink = document.getElementById("logoutLink");
+  
+    // I-attach ang event handler
+    logoutLink.addEventListener("click", function (event) {
+      // I-prevent ang default behavior sa link (pag-refresh sa page)
+      event.preventDefault();
+  
+      // I-display ang confirmation message
+      const isSure = confirm("Are you sure you want to log out?");
+  
+      // Kon ang user nag-yes, redirekta sa purok page
+      if (isSure) {
+        window.location.href = "purok.html";
+      }
+      // Kon dili, wala'y buhaton
+    });
+  </script>
+  
+</body>
+</html>

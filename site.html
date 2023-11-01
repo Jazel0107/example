@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resident Dashboard</title>
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="javascript/logout.js">
+</head>
+<body background="images/15.jpg">
+       
+
+    <header>
+        <h1>Welcome</h1>
+    </header>
+    <center><img src="images/no.jpg" alt="" class="site"></center>
+    <main>
+        <br>
+        <br>
+       <ul><button onclick="button" class="btn btn-outline-dark">ABOUT</button></ul>
+       <br>
+       <ul><button onclick="button" class="btn btn-outline-dark">DOCUMENTS REQUEST</button></ul><br>
+       <ul><button onclick="button" class="btn btn-outline-dark">PAYMENT</button></ul><br>
+       <ul><button onclick="button" class="btn btn-outline-dark">ANNOUNCEMENT</button></ul><br>
+
+        
+    </main>
+  <center><button id="logoutButton" class="btn btn-outline-dark">LOG OUT</button></center>
+ 
+
+  <div id="confirmationModal" class="modal">
+      <div class="modal-content">
+          <p>Are you sure you want to log out?</p>
+          <button id="confirmYes">Yes</button>
+          <button id="confirmNo">No</button>
+      </div>
+      <script src="javascript/logout.js"></script>
+  </div>
+   
+</body>
+</html>
