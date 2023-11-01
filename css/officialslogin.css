@@ -1,0 +1,16 @@
+.container {
+    text-align: center;
+    font-style: italic;
+    color: white;
+    margin-top: 10%;
+}
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.officers {
+    border-radius: 100px;
+    width: 120px;
+    height: 120px;
+}
+
